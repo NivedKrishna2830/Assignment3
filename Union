@@ -1,0 +1,23 @@
+/* To read and display the address of a person using a variable of the union */
+#include<stdio.h>
+#define C_SIZE 100
+union address 
+  {
+    char name[C_SIZE],House_Name[C_SIZE],city[C_SIZE],state[C_SIZE],pin[C_SIZE];
+  }s;
+void main()
+  {
+    union address s;
+    printf("\n Enter name");
+    scanf("%s",s.name);
+    printf("\n Enter House name");
+    scanf("%s",s.House_Name);
+    printf("\n Enter city");
+    scanf("%s",s.city);
+    printf("\n Enter state");
+    scanf("%s",s.state);
+    printf("\n Enter Pin code");
+    scanf("%s",s.pin);
+    printf("\n Details \n");
+    printf("\n Name:%s \n House name:%s \n City name:%s \n State:%s \n Pin code:%s",s.name,s.House_Name,s.city,s.state,s.pin);
+  }
