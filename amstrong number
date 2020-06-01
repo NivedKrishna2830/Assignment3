@@ -1,0 +1,22 @@
+//check whwather the number is amstrong or not
+#include<stdio.h>
+void main()
+  {
+    int n,copy,armstrong=0;
+    printf("\n Enter a number");
+    scanf("%d",&n);
+    copy=n;
+    while(n>0)
+      {
+        armstrong=armstrong+((n%10)*(n%10)*(n%10));
+        n=n/10;
+      }
+    if(armstong==copy)
+      {
+        printf("\n The number is armstrong");
+      }
+    else
+      {
+        printf("\n The number is not armstrong");
+      }
+  }
